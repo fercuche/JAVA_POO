@@ -31,18 +31,18 @@ public class Circunferencia {
 
         Scanner scanner = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
         System.out.println("Ingrese el radio");
-        this.radio = scanner.nextDouble();
+        radio = scanner.nextDouble();
     }
 
     public void Area() {
 
-        double area = 3.14 * radio * radio;
+        double area = Math.PI*Math.pow(radio, 2);
         System.out.printf("El área de la circunferencia es: %.1f %n", area);
     }
 
     public void Perimetro() {
 
-        double perimetro = 2 * 3.14 * radio;
+        double perimetro = 2 * Math.PI * radio;
         System.out.printf("El perímetro de la circunferencia es: %.1f %n", perimetro);
     }
 

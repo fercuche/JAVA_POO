@@ -21,8 +21,44 @@ public class Libro {
     //constructor vacío
     public Libro() {
     }
+    
+    //getters y setters
 
-    public void getLibro() {
+    public long getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(long isbn) {
+        this.isbn = isbn;
+    }
+
+    public int getNroPaginas() {
+        return nroPaginas;
+    }
+
+    public void setNroPaginas(int nroPaginas) {
+        this.nroPaginas = nroPaginas;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+    
+
+    //metodos
+    public void mostrarLibro() {
         System.out.println("Título: " + titulo);
         System.out.println("Autor: " + autor);
         System.out.println("Número de páginas: " + nroPaginas);
@@ -30,17 +66,17 @@ public class Libro {
 
     }
 
-    public void setLibro() {
+    public void cargarLibro() {
         Scanner scanner = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
 
         System.out.println("Ingrese el ISBN:");
-        this.isbn = scanner.nextLong();
+        isbn = scanner.nextLong();
         System.out.println("Ingrese el número de páginas:");
-        this.nroPaginas = scanner.nextInt();
+        nroPaginas = scanner.nextInt();
         System.out.println("Ingrese el Titulo:");
-        this.titulo = scanner.next();
+        titulo = scanner.next();
         System.out.println("Ingrese el autor:");
-        this.autor = scanner.next();
+        autor = scanner.next();
 
     }
 

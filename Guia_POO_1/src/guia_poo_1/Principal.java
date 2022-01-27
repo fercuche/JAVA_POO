@@ -6,9 +6,9 @@ public class Principal {
 
         Libro libro = new Libro();
 
-        libro.setLibro();
+        libro.cargarLibro();
         System.out.println("------------------------------------------");
-        libro.getLibro();
+        libro.mostrarLibro();
         System.out.println("------------------------------------------");
     }
 
