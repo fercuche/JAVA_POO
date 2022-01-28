@@ -7,8 +7,9 @@ public class Principal {
         Rectangulo rectangulo = new Rectangulo();
 
         rectangulo.crearRectangulo();
-        System.out.printf("El área del rectangulo es: %.1f mm%n", rectangulo.area());
-        System.out.printf("El perímetro del rectangulo es: %.1f mm%n", rectangulo.perimetro());
+        System.out.printf("El área del rectangulo es: %.1f mm%n", rectangulo.calcularArea());
+        System.out.printf("El perímetro del rectangulo es: %.1f mm%n", rectangulo.calcularPerimetro());
+        rectangulo.dibujarRectangulo();
         
 
     }

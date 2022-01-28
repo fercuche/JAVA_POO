@@ -45,18 +45,23 @@ public class Rectangulo {
         this.altura = scanner.nextFloat();
     }
 
-    public float area() {
+    public float calcularArea() {
         float area = base * altura;
         return area;
     }
 
-    public float perimetro() {
+    public float calcularPerimetro() {
         float perimetro = 2 * (base + altura);
         return perimetro;
     }
-    
-    
 
-
+    public void dibujarRectangulo() {
+        for (int fila = 1; fila <= altura; fila++) {
+            for (int columna = 1; columna <= base; columna++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 
 }
