@@ -26,7 +26,7 @@ public class Principal {
     public static void main(String[] args) {
         
         Cafetera cafetera = new Cafetera();
-        cafetera.agregarCafe();
+        cafetera.agregarCafe(0);
         cafetera.servirTaza(cafetera.getCapacidadActual());
         cafetera.vaciarCafetera();
         

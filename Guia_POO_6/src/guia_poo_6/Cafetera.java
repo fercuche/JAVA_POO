@@ -46,7 +46,7 @@ public class Cafetera {
     public void servirTaza(int tamaño){
         System.out.println("Ingrese la medida deseada de la taza:");
         tamaño = scanner.nextInt();
-        if (tamaño<capacidadActual){
+        if (tamaño<=capacidadActual){
             System.out.printf("La taza se llenó.%nLa cafetera quedó con %d de café%n", capacidadActual);
         }else{
             System.out.printf("La taza no se llenó, quedó con una cantidad de %d de café.%n", capacidadActual);

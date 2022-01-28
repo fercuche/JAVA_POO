@@ -64,10 +64,10 @@ public class Cuenta {
     }
 
     public double extraccionRapida(double retiro) {
-        if (retiro < (this.saldoActual * 0.2)) {
-            this.saldoActual -= retiro;
+        if (retiro < (  saldoActual * 0.2)) {
+            saldoActual -= retiro;
             System.out.println("Usted retiro: " + retiro + ",y su saldo actual es: $" + saldoActual);
-            return this.saldoActual;
+            return saldoActual;
         } else {
             System.out.println("Ha excedido el límite del día.");
             return retiro;
