@@ -16,21 +16,18 @@ cuanto quedó la taza.
 • Método vaciarCafetera(): pone la cantidad de café actual en cero.
 • Método agregarCafe(int): se le pide al usuario una cantidad de café, el método lo
 recibe y se añade a la cafetera la cantidad de café indicada.
-*/
+ */
 package guia_poo_6;
-
 
 public class Principal {
 
-    
     public static void main(String[] args) {
-        
+
         Cafetera cafetera = new Cafetera();
         cafetera.agregarCafe(0);
         cafetera.servirTaza(cafetera.getCapacidadActual());
         cafetera.vaciarCafetera();
-        
-        
+
     }
-    
+
 }

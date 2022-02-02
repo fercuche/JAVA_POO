@@ -88,4 +88,20 @@ public class Persona {
         altura = scanner.nextFloat();
     }
 
+    public int calcularIMC() {
+        double imc = peso / Math.pow(altura, 2);
+        if (imc < 20) {
+            return -1;
+        } else if (imc >25) {
+            return 1;
+        } else {
+            return 0; 
+        }
+
+    }
+
+    public boolean esMayorDeEdad() {
+        return edad >= 18;
+    }
+
 }
